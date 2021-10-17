@@ -9,13 +9,24 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* Begin site styles below */
 
 html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
+    padding: 14px;
 }
+
+h2, h3, p {
+  padding-bottom: 14px;
+}
+
 
 /*
   A quick baseline grid overlay using css+svg.
   Inspired by [Basehold.it](https://basehold.it/). @author leshido
+  1. Paste this at the *very* bottom of your CSS file.
+  2. Change the `height` value on `<svg height="" ...>` to the value
+     of your `line-height` (in pixels).
+  3. Add `class="g"` to your `<html>` tag to display the grid.
  */
 
 .g body { position: relative; }
