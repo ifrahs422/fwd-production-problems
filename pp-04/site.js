@@ -3,6 +3,7 @@
   call outputs the correct value (5) for x. You must still use
   `x` as the variable inside the function, however.
 */
+
 /* Step 1:
 let x = 5;
 
@@ -26,12 +27,12 @@ console.log('The value of x is', x, '-- it should be 5.');
   can accurately test your work.
 */
 
-var obj = {
-double: function(num) {
-  let x = num * 2;
-  return x;
+let double = function(num) {
+  return num *2;
 }
-};
+
+console.log('the value of double(6) is', double(6));
+
 
 /*
   Step 3. Rewrite your corrected `double()` function from Step 2.
