@@ -4,7 +4,7 @@
   `x` as the variable inside the function, however.
 */
 
-/* Step 1:
+/* Step 1 Solution
 let x = 5;
 
 function double(num) {
@@ -27,6 +27,7 @@ console.log('The value of x is', x, '-- it should be 5.');
   can accurately test your work.
 */
 
+/* Step 2 Solution
 let double = function(num) {
   return num *2;
 }
@@ -39,3 +40,12 @@ console.log('the value of double(6) is', double(6));
   so that non-number values passed into the function are handled
   in some reasonable way.
 */
+
+let double = function(num) {
+  if (typeof(num) !== 'number' || isNaN(num)) {
+    console.log('Please enter a number');
+  }
+  return num *2;
+}
+console.log('the value of double(6) is', double(6));
+console.log('the value of double(hello) is', double('hello'));
